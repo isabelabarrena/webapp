@@ -1,13 +1,13 @@
 :root {
     /* Custom color palette */
-    --background: hsla(209, 12%, 22%, 1); /* #323B42 */
+    --background: hsl(210, 100%, 50%); /* #323B42 */
     --foreground: hsla(50, 25%, 98%, 1); /* #FCFBF9 */
 
     --card: hsla(24, 29%, 80%, 1); /* #D9C7BE */
-    --card-foreground: hsla(209, 12%, 22%, 1); /* #323B42 */
+    --card-foreground: rgb(0, 128, 255); /* #323B42 */
 
-    --popover: hsla(24, 29%, 80%, 1); /* #D9C7BE */
-    --popover-foreground: hsla(209, 12%, 22%, 1); /* #323B42 */
+    --popover: hsl(0, 100%, 28%); /* #D9C7BE */
+    --popover-foreground: rgb(0, 128, 255); /* #323B42 */
 
     --primary: hsla(16, 5%, 39%, 1); /* #635B58 */
     --primary-foreground: hsla(50, 25%, 98%, 1); /* #FCFBF9 */
@@ -15,7 +15,7 @@
     --secondary: hsla(28, 13%, 61%, 1); /* #A59B95 */
     --secondary-foreground: hsla(209, 12%, 22%, 1); /* #323B42 */
 
-    --muted: hsla(24, 6%, 48%, 1); /* #8C817B */
+    --muted: hsl(24, 100%, 48%); /* #8C817B */
     --muted-foreground: hsla(50, 25%, 98%, 1); /* #FCFBF9 */
 
     --accent: hsla(28, 12%, 68%, 1); /* #B5A79F */
