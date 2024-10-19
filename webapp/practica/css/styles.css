@@ -8,14 +8,5 @@ body {
 }
 
 h1, h2, h3, p {
-    color: #001f3f; /* Color de texto Azul marino */
-}
-
-a {
-    color: #0074D9; /* Color de enlaces un poco más claro */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #001f3f; /* Color del enlace cuando el mouse está encima */
+    color: #0080ff; /* Color de texto Azul marino */
 }
