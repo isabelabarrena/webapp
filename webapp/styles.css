@@ -1,0 +1,19 @@
+/* styles.css */
+body {
+    font-family: Helvetica, Arial, sans-serif; /* Tipografía Helvetica */
+    color: #ffffe9; /* Azul marino */
+    background-color: #09002a; /* Fondo gris claro para contraste */
+    margin: 20;
+    padding: 20px;
+}
+
+/*Release ma nigga*/
+
+/* Ajustamos la imagen para que se adapte a la pantalla */
+ .imagen-ajustada {
+    width: 100%;  /* Ancho completo de la ventana */
+    height: 100%; /* Alto completo de la ventana */
+    object-fit: cover; /* Ajuste de la imagen para que se recorte sin distorsionarse */
+    display: block;
+}
+
