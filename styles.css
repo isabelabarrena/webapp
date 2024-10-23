@@ -1,14 +1,14 @@
-
 header {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 60px;
-    color: #faf8ff; 
-    background-color: #04084d; 
+    font-size: 100px;
+    color: #faf8ff;
+    background-color: #04084d;
     margin: -20;
     padding: 0px;
     padding-top: 20px;
     padding-bottom: 20px;
     font-weight: 800;
+    text-align: right;
 }
 
 h1,h2,h3,h4 {
