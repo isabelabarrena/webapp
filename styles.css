@@ -9,7 +9,6 @@ header {
     padding-top: 20px;
     padding-bottom: 20px;
     font-weight: 800;
-    line-break: 60px;
 }
 
 h1,h2,h3,h4 {
@@ -31,6 +30,7 @@ body {
     margin: 20;
     padding-left: 10px;
     padding-bottom: 20px;
+    padding-right: 30px;
     font-weight: 200;
 
 }
@@ -42,5 +42,4 @@ body {
     display: block;
     border-radius: 6px;
 }
-
 
