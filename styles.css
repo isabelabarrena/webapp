@@ -23,10 +23,10 @@ h1,h2,h3,h4 {
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif; /* Tipografía Helvetica */
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 20px;
-    color: #faf8ff; /* Azul marino */
-    background-color: #04084d; /* Fondo gris claro para contraste */
+    color: #faf8ff;
+    background-color: #04084d; 
     margin: 20;
     padding-left: 10px;
     padding-bottom: 20px;
