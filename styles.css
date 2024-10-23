@@ -1,34 +1,35 @@
 header {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100px;
-    color: #faf8ff;
-    background-color: #04084d;
+    color: #04084d;
+    background-color: #fff8ea;
     margin: -20;
     padding: 0px;
     padding-top: 20px;
     padding-bottom: 20px;
     font-weight: 800;
     text-align: right;
+    line-height: -10;
 }
 
 h1,h2,h3,h4 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
-    color: #faf8ff; 
-    background-color: #04084d; 
-    margin: 20;
-    padding-top: 1%;
-    padding-bottom: 0%;
+    color: #04084d; 
+    background-color: #fff8ea; 
+    margin: 30;
+    padding-top: 10px;
+    padding-bottom: -20px;
     font-weight: 600;
 }
 
 body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 20px;
-    color: #faf8ff;
-    background-color: #04084d; 
-    margin: 20;
-    padding-left: 10px;
+    color: #04084d;
+    background-color: #fff8ea; 
+    margin: 30;
+    padding-left: 20px;
     padding-bottom: 20px;
     padding-right: 30px;
     font-weight: 200;
@@ -41,5 +42,7 @@ body {
     object-fit: cover; 
     display: block;
     border-radius: 6px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+
 }
 
