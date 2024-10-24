@@ -1,6 +1,6 @@
 header {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 100px;
+    font-size: 85px;
     color: #04084d;
     background-color: #fff8ea;
     margin: -20;
@@ -8,7 +8,7 @@ header {
     padding-top: 20px;
     padding-bottom: 20px;
     font-weight: 800;
-    text-align: right;
+    text-align: center;
     line-height: -20;
 }
 
