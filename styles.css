@@ -1,0 +1,48 @@
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90px;
+    color: #04084d;
+    background-color: #fff8ea;
+    margin: 0;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 800;
+    text-align: center;
+    line-height: -20;
+}
+
+h1,h2,h3,h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #04084d; 
+    background-color: #fff8ea; 
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-weight: 600;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    color: #04084d;
+    background-color: #fff8ea; 
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    font-weight: 200;
+
+}
+
+ .imagen-ajustada {
+    width: 80%;  
+    height: 80%;
+    object-fit: cover; 
+    display: block;
+    border-radius: 6px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+
+}
+
