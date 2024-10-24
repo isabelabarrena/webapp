@@ -17,9 +17,9 @@ h1,h2,h3,h4 {
     font-size: 30px;
     color: #04084d; 
     background-color: #fff8ea; 
-    margin: 30;
+    padding-left: 30px;
     padding-top: 10px;
-    padding-bottom: -20px;
+    padding-bottom: 0px;
     font-weight: 600;
 }
 
@@ -28,7 +28,7 @@ body {
     font-size: 20px;
     color: #04084d;
     background-color: #fff8ea; 
-    margin: 30;
+    padding-top: 0px;
     padding-left: 20px;
     padding-bottom: 20px;
     padding-right: 30px;
