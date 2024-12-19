@@ -1,40 +1,12 @@
-.flex-container {
+header > div {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #ffffff;
-  height: 100%;
-  padding: 15px;
-  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #461f00;
+  color: white;
 }
-
-.flex-container > div {
-  background: #ffffff;
-  border-color: #170781;
-  border: 1px solid;
-  border-radius: 50px;
-  padding: 15px;
-  text-align: center;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.flex-container:hover {
-  background-color: #170781;
-  border-color: #ffffff;
-  border: 1px;
-  padding: 15px;
-  text-align: center;
-}
-
-header {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  color: #170781;
-  background-color: #fffcf5;
-  padding: 0px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-weight: 800;
-  text-align: center;
-  line-height: -20;
+nav {
+  display: flex;
+  gap: 0px;
 }
