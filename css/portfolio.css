@@ -1,5 +1,22 @@
 header {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 20px;
+}
+.foto-perfil {
+  width: 20%;
+  height: 20%;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+  align-items: left;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+  color: #461f00;
+  text-align: right;
 }
