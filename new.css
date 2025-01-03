@@ -4,11 +4,14 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 1.5rem;
 }
 
 header {
-  background-color: #5c3317;
-  padding: 1rem;
+  background-color: #381a06;
+  padding: 3rem;
+  font-size: 2rem;
+  margin-bottom: 0px;
 }
 
 nav ul {
@@ -26,27 +29,29 @@ nav ul li a {
 }
 
 .sobre-mi {
-  text-align: center;
-  padding: 2rem;
+  text-align: left;
+  padding: 8rem;
+  color: #291203;
 }
 
 .sobre-mi img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  width: 30%;
+  height: 30%;
+  border-radius: 0%;
+  margin-top: 10px;
 }
 
 .proyectos {
-  padding: 2rem;
+  padding: 5rem;
 }
 
 .proyectos h2 {
   text-align: center;
-  color: #5c3317;
+  color: #291203;
 }
 
 .proyecto {
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -59,7 +64,7 @@ nav ul li a {
 }
 
 .contacto {
-  background-color: #5c3317;
+  background-color: #381a06;
   color: white;
   text-align: center;
   padding: 2rem;
