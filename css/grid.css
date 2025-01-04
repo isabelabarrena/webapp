@@ -1,34 +1,52 @@
-.sobre-mi {
+.grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  align-items: left;
-  gap: 1rem;
-  padding: 2rem;
-  background-color: #f9f9f9;
+  grid-template-columns: 450px 1000px;
 }
-
-/* Imagen a la izquierda */
-.sobre-mi img {
-  grid-column: 1 / span 4;
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
+.grid div {
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-bottom: 0em;
 }
-
-/* Texto a la derecha */
-.sobre-mi-texto {
-  grid-column: 5 / span 8;
-  text-align: left;
+.grid div h1 {
+  padding: 1em;
+  padding-top: 50vh;
 }
-
-.sobre-mi-texto h1 {
-  font-size: 2.5rem;
-  color: #5c3317;
-  margin-bottom: 1rem;
+.proyecto1 {
+  display: grid;
+  grid-template-columns: 20% 80%;
 }
-
-.sobre-mi-texto p {
-  font-size: 1.2rem;
-  color: #333;
-  line-height: 1.5;
+.proyecto1 div {
+  padding-top: 1em;
+  padding-left: 0em;
+  padding-bottom: 1em;
+}
+.proyecto1 div h3 {
+  padding-left: 1em;
+  padding-top: 35vh;
+}
+.proyecto2 {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.proyecto2 div {
+  padding-top: 1em;
+  padding-left: 0em;
+  padding-bottom: 1em;
+}
+.proyecto2 div h3 {
+  padding-left: 1em;
+  padding-top: 35vh;
+}
+.proyecto3 {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.proyecto3 div {
+  padding-top: 1em;
+  padding-left: 0em;
+  padding-bottom: 1em;
+}
+.proyecto3 div h3 {
+  padding-left: 1em;
+  padding-top: 35vh;
 }
