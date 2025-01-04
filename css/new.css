@@ -45,19 +45,24 @@ nav ul li a {
   border-radius: 0%;
   margin-top: 0px;
 }
-
-h1,
+.sobre-mi > h1 {
+  text-align: center;
+  padding-left: 1rem;
+  font-family: "Neue Haas Display", sans-serif;
+  font-size: 3rem;
+  color: #291203;
+}
 .proyectos > h2 {
   text-align: center;
   padding-left: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Neue Haas Display", sans-serif;
   font-size: 3rem;
   color: #291203;
 }
 .contacto > h2 {
   text-align: center;
   padding-left: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Neue Haas Display", sans-serif;
   font-size: 3rem;
   color: #ffffff;
 }

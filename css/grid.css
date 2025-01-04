@@ -1,0 +1,34 @@
+.sobre-mi {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: left;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+/* Imagen a la izquierda */
+.sobre-mi img {
+  grid-column: 1 / span 4;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Texto a la derecha */
+.sobre-mi-texto {
+  grid-column: 5 / span 8;
+  text-align: left;
+}
+
+.sobre-mi-texto h1 {
+  font-size: 2.5rem;
+  color: #5c3317;
+  margin-bottom: 1rem;
+}
+
+.sobre-mi-texto p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.5;
+}
