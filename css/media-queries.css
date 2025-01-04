@@ -1,198 +1,108 @@
-/*
-  MEDIA QUERIES
-  https://alistapart.com/article/responsive-web-design/
-  https://www.w3.org/TR/mediaqueries-3/
-*/
+/* Diseño base para móviles (ya definido en el CSS base) */
 
-/* Mobile Portrait */
-@media only screen and (max-width: 600px) and (orientation: portrait) {
-}
-/* EndOf MobilePortrait */
-
-/* Mobile Landscape */
-@media only screen and (max-width: 800px) and (orientation: landscape) {
-}
-
-/* Tablet Portrait */
-@media only screen and (min-width: 601px) and (max-width: 1200px) and (orientation: portrait) {
-  /* Navbar */
-  .nav-menu {
-    display: none;
-    /* Hide hamburger icon on desktop */
+/* Media Query: Pantallas pequeñas (480px o menos) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    padding-left: 1rem;
   }
 
-  header .nav-items {
-    display: flex;
+  header {
+    padding: 1rem;
+    font-size: 20px;
+    background-color: #381a06;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; /* Centramos el contenido dentro del header */
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center; /* Centra el menú horizontalmente */
+    gap: 1rem; /* Espacio entre los enlaces del menú */
+  }
+
+  .sobre-mi {
+    text-align: center;
+  }
+
+  .sobre-mi img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .proyectos h2 {
+    font-size: 1.5rem; /* Reducimos el tamaño del título */
+  }
+
+  .proyecto {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imagen-proyecto {
+    width: 100%;
+    height: auto; /* Hacemos que la imagen se ajuste automáticamente */
+  }
+
+  .contacto {
+    font-size: 0.9rem; /* Reducimos la fuente para encajar en pantallas más pequeñas */
+  }
+
+  .contacto ul {
+    text-align: center;
+  }
+}
+
+/* Diseño para pantallas medianas (tablets: 768px o menos) */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+
+  nav ul {
     flex-direction: row;
-    justify-content: flex-end;
-    position: static;
+    justify-content: space-around;
   }
 
-  header .nav-items li {
-    border: none;
+  .proyecto {
+    flex-direction: column;
+    gap: 1rem;
   }
 
-  header .nav-items li a {
-    padding: 20px 30px;
+  .imagen-proyecto {
+    width: 80%;
+    margin: 0 auto;
   }
 
-  /* EndOf Navbar */
-
-  .grid {
-    grid-template-columns: var(--aside-width) 1fr;
-    grid-template-areas: "sidebar content";
-  }
-
-  main.grid {
-    grid-template-columns: 1fr;
-    grid-template-areas: "content";
-  }
-
-  .toc {
-    position: relative;
-    transform: translateX(0);
-    box-shadow: none;
-  }
-
-  .sidebar-toggle-btn {
-    display: none;
+  .contacto ul li {
+    margin-bottom: 1rem;
   }
 }
 
-/* Tablet Landscape */
-@media only screen and (min-width: 801px) and (max-width: 1200px) and (orientation: landscape) {
-  /* Navbar */
-  .nav-menu {
-    display: none;
-    /* Hide hamburger icon on desktop */
+/* Diseño para pantallas más grandes (1024px o más) */
+@media (min-width: 1024px) {
+  nav ul {
+    justify-content: space-between;
   }
 
-  header .nav-items {
-    display: flex;
+  .proyectos {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .proyecto {
     flex-direction: row;
-    justify-content: flex-end;
-    position: static;
   }
 
-  header .nav-items li {
-    border: none;
-  }
-
-  header .nav-items li a {
-    padding: 20px 30px;
-  }
-
-  /* EndOf Navbar */
-
-  .grid {
-    grid-template-columns: var(--aside-width) 1fr;
-    grid-template-areas: "sidebar content";
-  }
-
-  main.grid {
-    grid-template-columns: 1fr;
-    grid-template-areas: "content";
-  }
-
-  .toc {
-    position: relative;
-    transform: translateX(0);
-    box-shadow: none;
-  }
-
-  .sidebar-toggle-btn {
-    display: none;
-  }
-}
-
-/* Small Desktop */
-@media only screen and (min-width: 1201px) and (max-width: 1600px) {
-  /* Navbar */
-  .nav-menu {
-    display: none;
-    /* Hide hamburger icon on desktop */
-  }
-
-  header .nav-items {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    position: static;
-  }
-
-  header .nav-items li {
-    border: none;
-  }
-
-  header .nav-items li a {
-    padding: 20px 30px;
-  }
-
-  /* EndOf Navbar */
-
-  .grid {
-    grid-template-columns: var(--aside-width) 1fr;
-    grid-template-areas: "sidebar content";
-  }
-
-  main.grid {
-    grid-template-columns: 1fr;
-    grid-template-areas: "content";
-  }
-
-  .toc {
-    position: relative;
-    transform: translateX(0);
-    box-shadow: none;
-  }
-
-  .sidebar-toggle-btn {
-    display: none;
-  }
-}
-
-/* Large Desktop */
-@media only screen and (min-width: 1601px) {
-  /* Navbar */
-  .nav-menu {
-    display: none;
-    /* Hide hamburger icon on desktop */
-  }
-
-  header .nav-items {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    position: static;
-  }
-
-  header .nav-items li {
-    border: none;
-  }
-
-  header .nav-items li a {
-    padding: 20px 30px;
-  }
-
-  /* EndOf Navbar */
-
-  .grid {
-    grid-template-columns: var(--aside-width) 1fr;
-    grid-template-areas: "sidebar content";
-  }
-
-  main.grid {
-    grid-template-columns: 1fr;
-    grid-template-areas: "content";
-  }
-
-  .toc {
-    position: relative;
-    transform: translateX(0);
-    box-shadow: none;
-  }
-
-  .sidebar-toggle-btn {
-    display: none;
+  .imagen-proyecto {
+    width: 150px;
+    height: 150px;
   }
 }

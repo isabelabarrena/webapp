@@ -102,26 +102,3 @@ h1,
 .contacto ul li {
   margin-bottom: 0.5rem;
 }
-
-/* Responsive Styles */
-@media (min-width: 768px) {
-  .proyecto {
-    flex-direction: row;
-  }
-
-  .imagen-proyecto {
-    width: 150px;
-    height: 150px;
-  }
-}
-
-@media (min-width: 1024px) {
-  nav ul {
-    justify-content: space-between;
-  }
-
-  .proyectos {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-}
