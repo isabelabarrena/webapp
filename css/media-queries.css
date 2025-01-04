@@ -14,7 +14,7 @@ body {
 }
 
 header {
-  background-color: #5c3317;
+  background-color: #381a06;
   padding: 1rem;
   font-family: "Neue Haas Display", sans-serif;
   font-weight: 700;
@@ -47,7 +47,7 @@ nav ul li a {
 
 .sobre-mi h1 {
   font-size: 2rem;
-  color: #5c3317;
+  color: #381a06;
 }
 
 .proyectos {
@@ -56,7 +56,7 @@ nav ul li a {
 
 .proyectos h2 {
   text-align: center;
-  color: #5c3317;
+  color: #381a06;
   font-size: 2rem;
 }
 
@@ -74,7 +74,7 @@ nav ul li a {
 }
 
 .contacto {
-  background-color: #5c3317;
+  background-color: #381a06;
   color: white;
   text-align: center;
   padding: 2rem;
