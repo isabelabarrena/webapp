@@ -1,100 +1,184 @@
-/* Diseño base para móviles (ya definido en el CSS base) */
+/* General Styles */
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("./fonts/Neue-Haas-Display.woff2") format("woff2"),
+    url("./fonts/Neue-Haas-Display.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Neue Haas Display", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Media Query: Pantallas pequeñas (480px o menos) */
+header {
+  background-color: #5c3317;
+  padding: 1rem;
+  font-family: "Neue Haas Display", sans-serif;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.sobre-mi {
+  text-align: center;
+  padding: 2rem;
+}
+
+.sobre-mi img {
+  width: 50%;
+  height: 50%;
+  border-radius: 0%;
+}
+
+.sobre-mi h1 {
+  font-size: 2rem;
+  color: #5c3317;
+}
+
+.proyectos {
+  padding: 2rem;
+}
+
+.proyectos h2 {
+  text-align: center;
+  color: #5c3317;
+  font-size: 2rem;
+}
+
+.proyecto {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.imagen-proyecto {
+  background-color: #ccc;
+  width: 100px;
+  height: 100px;
+}
+
+.contacto {
+  background-color: #5c3317;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.contacto ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacto ul li {
+  margin-bottom: 0.5rem;
+}
+
+.contacto p {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+/* Responsive Styles */
 @media (max-width: 480px) {
-  body {
-    font-size: 14px;
-    padding-left: 1rem;
-  }
-
   header {
-    padding: 1rem;
-    font-size: 20px;
-    background-color: #381a06;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-bottom: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center; /* Centramos el contenido dentro del header */
+    padding: 0.5rem;
   }
 
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    justify-content: center; /* Centra el menú horizontalmente */
-    gap: 1rem; /* Espacio entre los enlaces del menú */
+  nav ul li a {
+    font-size: 0.9rem;
   }
 
-  .sobre-mi {
-    text-align: center;
-  }
-
-  .sobre-mi img {
-    width: 100px;
-    height: 100px;
+  .sobre-mi h1 {
+    font-size: 1.5rem;
   }
 
   .proyectos h2 {
-    font-size: 1.5rem; /* Reducimos el tamaño del título */
+    font-size: 1.5rem;
   }
 
   .proyecto {
     flex-direction: column;
-    text-align: center;
+    align-items: flex-start;
   }
 
   .imagen-proyecto {
-    width: 100%;
-    height: auto; /* Hacemos que la imagen se ajuste automáticamente */
+    width: 80px;
+    height: 80px;
   }
 
-  .contacto {
-    font-size: 0.9rem; /* Reducimos la fuente para encajar en pantallas más pequeñas */
-  }
-
-  .contacto ul {
-    text-align: center;
+  .contacto p {
+    font-size: 0.8rem;
   }
 }
 
-/* Diseño para pantallas medianas (tablets: 768px o menos) */
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
   header {
     padding: 1rem;
   }
 
-  nav ul {
-    flex-direction: row;
-    justify-content: space-around;
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  .sobre-mi h1 {
+    font-size: 1.75rem;
+  }
+
+  .proyectos h2 {
+    font-size: 1.75rem;
   }
 
   .proyecto {
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction: row;
   }
 
   .imagen-proyecto {
-    width: 80%;
-    margin: 0 auto;
+    width: 120px;
+    height: 120px;
   }
 
-  .contacto ul li {
-    margin-bottom: 1rem;
+  .contacto p {
+    font-size: 0.85rem;
   }
 }
 
-/* Diseño para pantallas más grandes (1024px o más) */
-@media (min-width: 1024px) {
-  nav ul {
-    justify-content: space-between;
+@media (min-width: 769px) {
+  header {
+    padding: 1.5rem;
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
+  }
+
+  .sobre-mi h1 {
+    font-size: 2rem;
   }
 
   .proyectos {
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  .proyectos h2 {
+    font-size: 2rem;
   }
 
   .proyecto {
@@ -104,5 +188,9 @@
   .imagen-proyecto {
     width: 150px;
     height: 150px;
+  }
+
+  .contacto p {
+    font-size: 1rem;
   }
 }
