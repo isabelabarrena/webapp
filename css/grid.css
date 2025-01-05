@@ -1,6 +1,6 @@
 .grid {
   display: grid;
-  grid-template-columns: 450px 1000px;
+  grid-template-columns: 30% 70%;
 }
 .grid div {
   padding-top: 1em;
@@ -24,6 +24,10 @@
   padding-left: 1em;
   padding-top: 35vh;
 }
+.gridfotos {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
 .proyecto2 {
   display: grid;
   grid-template-columns: 20% 80%;
@@ -35,7 +39,7 @@
 }
 .proyecto2 div h3 {
   padding-left: 1em;
-  padding-top: 35vh;
+  padding-top: 40vh;
 }
 .proyecto3 {
   display: grid;
@@ -56,13 +60,5 @@
 }
 .info div {
   padding-top: 1xs0vh;
-  justify-content: space-around;
-}
-.asterisco3 {
-  display: grid;
-  grid-template-rows: 25% 50% 25%;
-}
-.asterisco3 .imagen-ast-contacto {
-  padding-top: 2vh;
   justify-content: space-around;
 }

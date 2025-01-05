@@ -1,6 +1,6 @@
 /* General Styles */
 
-header {
+.cabesera {
   background-color: #381a06;
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -70,25 +70,24 @@ h2 {
   border-color: #291203;
 }
 .imagen-calima-gif {
-  width: 40%;
-  height: 40%;
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 1rem;
+  width: 75%;
+  display: grid;
+}
+.Calima3img {
+  width: 57%;
+  display: grid;
 }
 .imagen-proyecto-isidro {
   width: 280px;
-  height: 350px;
   border-color: #291203;
   border-width: 3px;
 }
 .imagen-sanisidro-gif {
-  width: 40%;
-  height: 40%;
+  width: 80%;
   display: flex;
-  justify-content: space-around;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  padding-left: 2rem;
 }
 .imagen-fomo {
   width: 280px;
@@ -97,21 +96,13 @@ h2 {
   border-width: 3px;
 }
 .imagen-fomomgz-gif {
-  width: 40%;
-  height: 40%;
+  width: 80%;
   display: flex;
-  justify-content: space-around;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  padding-left: 2rem;
 }
 
-.contacto > h2 {
-  text-align: center;
-  padding-left: 1rem;
-  font-family: "Neue Haas Display", sans-serif;
-  font-size: 3rem;
-  color: #ffffff;
-}
 .proyectos {
   padding: 5rem;
 }
@@ -139,6 +130,7 @@ h4 {
   font-weight: 600;
   margin: 0;
   font-size: 5rem;
+  padding: 0.5em;
 }
 .contacto ul {
   list-style: none;
@@ -154,10 +146,9 @@ h4 {
   flex-direction: flex;
 }
 .imagen-ast-contacto {
-  display: grid;
-  padding-top: 2em;
-  place-items: center;
-  height: 30vh;
+  width: 50vw;
+  height: 50vh;
+  padding-left: 22vw;
 }
 .info {
   text-align: center;
