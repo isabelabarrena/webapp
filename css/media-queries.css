@@ -1,5 +1,1 @@
-@media only screen and (min-width: 601px) and (max-width: 1200px) and (orientation: portrait) {
-   {
-    background-color: aqua;
-  }
-}
+/* Media Queries para teléfonos pequeños (<= 576px) */

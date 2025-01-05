@@ -1,7 +1,14 @@
 /* General Styles */
-
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("./fonts/Neue-Haas-Display.woff") format("woff");
+  src: url("./fonts/Neue-Haas-Display.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 .cabesera {
   background-color: #381a06;
+  max-width: 100%;
   padding-top: 3rem;
   padding-bottom: 3rem;
   padding-left: 2rem;
@@ -9,7 +16,6 @@
   font-size: 2rem;
   margin-bottom: 0px;
   font-family: "Neue Haas Display", sans-serif;
-  font-size: 2rem;
 }
 body {
   font-family: "Neue Haas Display", sans-serif;
@@ -87,7 +93,6 @@ h2 {
   display: flex;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  padding-left: 2rem;
 }
 .imagen-fomo {
   width: 280px;
@@ -170,4 +175,105 @@ h4 {
   font-size: 2.5rem;
   padding-top: 2em;
   padding-right: 2em;
+}
+
+@media (max-width: 768px) {
+  .cabesera {
+    max-width: 100%;
+    font-size: 1.5rem;
+  }
+  nav ul {
+    flex-direction: row; /* Cambia a fila */
+    justify-content: space-around; /* Asegura un espaciado adecuado */
+    text-align: left; /
+  }
+  nav ul li {
+    margin-bottom: 1rem;
+  }
+  .imagen-perfil{
+    width: 60vw;
+    padding-bottom: 1em;
+    padding-left: 17vw;
+    padding-top: 1rem;
+  
+  }
+  .imagen-asterisco1 {
+    width: 25vw;
+    padding-left: 35vw;
+  
+  }
+ p{
+  font-size: 1.5rem;
+  text-align: center;
+
+}
+  h1,
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .proyecto1 {
+    display: grid;
+    grid-template-columns: 45% 55%;
+  }
+  .proyecto1 div {
+    padding-top: 1em;
+    padding-left: 0em;
+    padding-bottom: 1em;
+  }
+  .proyecto1 div h3 {
+    padding-left: 0em;
+    padding-top: 22vh;
+  }
+  .imagen-calima-gif{
+  width: 94vw;
+  }
+  .proyecto2 {
+    display: grid;
+    grid-template-columns: 45% 55%;
+  }
+  .proyecto2 div {
+    padding-top: 1em;
+    padding-left: 0em;
+    padding-bottom: 1em;
+  }
+  .proyecto2 div h3 {
+    padding-left: 0em;
+    padding-top: 25vh;
+  }
+  .imagen-sanisidro-gif{
+  width: 96vw;
+  align-items: center;
+  }
+  .proyecto3 {
+    display: grid;
+    grid-template-columns: 45% 55%;
+  }
+  .proyecto3 div {
+    padding-top: 1em;
+    padding-left: 0em;
+    padding-bottom: 1em;
+  }
+  .proyecto3 div h3 {
+    padding-left: 0em;
+    padding-top: 22vh;
+  }
+  .imagen-fomomgz-gif{
+  width: 90vw;
+  
+  }
+  .proyectos {
+    padding: 1.5rem;
+    align-items: center;
+  }
+  .imagen-ast-contacto {
+    height: 20vh;
+    padding-left: 25vw;
+  }
+  .info,
+  .contacto > p {
+    font-size: 3rem;
+    padding: 1em;
+    padding-top: 2em;
+  }
 }
