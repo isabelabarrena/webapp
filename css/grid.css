@@ -8,8 +8,8 @@
   padding-bottom: 0em;
 }
 .grid div h1 {
-  padding: 1em;
-  padding-top: 50vh;
+  padding: 0em;
+  padding-top: 51vh;
 }
 .proyecto1 {
   display: grid;
@@ -49,4 +49,20 @@
 .proyecto3 div h3 {
   padding-left: 1em;
   padding-top: 35vh;
+}
+.info {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+.info div {
+  padding-top: 1xs0vh;
+  justify-content: space-around;
+}
+.asterisco3 {
+  display: grid;
+  grid-template-rows: 25% 50% 25%;
+}
+.asterisco3 .imagen-ast-contacto {
+  padding-top: 2vh;
+  justify-content: space-around;
 }

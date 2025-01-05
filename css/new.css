@@ -19,6 +19,7 @@ body {
 hr {
   border-color: #291203;
   border-width: 1px;
+  margin: 2rem;
 }
 nav ul {
   list-style: none;
@@ -44,6 +45,11 @@ h1 {
   padding: 1rem;
   color: #291203;
 }
+.imagen-asterisco1 {
+  width: 15vw;
+  height: 10vh;
+  padding-left: 38vw;
+}
 div p {
   padding-left: 1.1em;
   padding-right: 2em;
@@ -63,17 +69,40 @@ h2 {
   border-width: 3px;
   border-color: #291203;
 }
+.imagen-calima-gif {
+  width: 40%;
+  height: 40%;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+}
 .imagen-proyecto-isidro {
   width: 280px;
   height: 350px;
   border-color: #291203;
   border-width: 3px;
 }
+.imagen-sanisidro-gif {
+  width: 40%;
+  height: 40%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .imagen-fomo {
   width: 280px;
   height: 350px;
   border-color: #291203;
   border-width: 3px;
+}
+.imagen-fomomgz-gif {
+  width: 40%;
+  height: 40%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .contacto > h2 {
@@ -101,6 +130,7 @@ h3 {
   align-items: left;
   gap: 2rem;
 }
+
 h4 {
   text-align: left;
   color: #ffffff;
@@ -110,14 +140,43 @@ h4 {
   margin: 0;
   font-size: 5rem;
 }
-.contacto {
-  background-color: #291203;
-  color: #ffffff;
-  text-align: center;
-}
-
 .contacto ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+.contacto {
+  background-color: #291203;
+  color: white;
+  border: 50px;
+  height: 100vh;
+  display: row;
+  flex-direction: flex;
+}
+.imagen-ast-contacto {
+  display: grid;
+  padding-top: 2em;
+  place-items: center;
+  height: 30vh;
+}
+.info {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Neue Haas Display", sans-serif;
+  font-weight: 100;
+  margin: 0;
+  font-size: 2rem;
+  padding-top: 2em;
+  padding-right: 2em;
+}
+
+.contacto > p {
+  text-align: right;
+  color: #ffffff;
+  font-family: "Neue Haas Display", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  font-size: 2.5rem;
+  padding-top: 2em;
+  padding-right: 2em;
 }
