@@ -6,6 +6,18 @@
   font-weight: normal;
   font-style: normal;
 }
+body {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .cabesera {
   background-color: #381a06;
   max-width: 100%;
@@ -40,6 +52,7 @@ nav ul li a {
   color: white;
   font-weight: bold;
 }
+
 h1 {
   font-family: "Neue Haas Display", sans-serif;
   font-weight: 600;
@@ -57,8 +70,7 @@ h1 {
   padding-left: 38vw;
 }
 div p {
-  padding-left: 1.1em;
-  padding-right: 2em;
+  padding-right: em;
 }
 h2 {
   text-align: right;
@@ -127,6 +139,7 @@ h3 {
   gap: 2rem;
 }
 
+
 h4 {
   text-align: left;
   color: #ffffff;
@@ -177,14 +190,14 @@ h4 {
   padding-right: 2em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 680px) {
   .cabesera {
     max-width: 100%;
     font-size: 1.5rem;
   }
   nav ul {
-    flex-direction: row; /* Cambia a fila */
-    justify-content: space-around; /* Asegura un espaciado adecuado */
+    flex-direction: row; 
+    justify-content: space-around;
     text-align: left; /
   }
   nav ul li {
@@ -205,18 +218,91 @@ h4 {
  p{
   font-size: 1.5rem;
   text-align: center;
-
 }
   h1,
   h2 {
     font-size: 3rem;
     text-align: center;
+    padding-bottom: 1rem;
   }
-  .proyecto1 {
+
+  h3{
+    text-align: center;
+  }
+  .imagen-proyecto-zara, .imagen-proyecto-isidro,.imagen-fomo{
+  padding-left: 25vw;  
+  }
+  .imagen-calima-gif{
+  width: 94vw;
+  }
+ 
+  .imagen-sanisidro-gif{
+  width: 96vw;
+  align-items: center;
+  }
+ 
+  .imagen-fomomgz-gif{
+  width: 90vw;
+  
+  }
+  .proyectos {
+    padding: 1.5rem;
+    align-items: center;
+  }
+  .imagen-ast-contacto {
+    height: 20vh;
+    padding-left: 25vw;
+  }
+  .info,
+  .contacto > p {
+    font-size: 3rem;
+    padding: 1em;
+    padding-top: 2em;
+  }
+}
+@media (min-width: 681px) and (max-width: 950px){
+  .cabesera {
+    max-width: 100%;
+    font-size: 2rem;
+  }
+  nav ul {
+    flex-direction: row; /* Cambia a fila */
+    justify-content: space-around; /* Asegura un espaciado adecuado */
+    text-align: left; /
+  }
+  nav ul li {
+    margin-bottom: 1.5rem;
+  }
+  .imagen-perfil{
+    padding-bottom: 1em;
+    padding-top: 1rem;
+  }
+  .imagen-asterisco1 {
+    width: 25vw;
+    padding-left: 35vw;
+  }
+ p{
+  font-size: 2rem;
+  text-align: left;
+  }
+  h1 {
+    font-size: 4rem;
+    text-align: left;
+  }
+ 
+  h2 {
+    font-size: 4rem;
+    text-align: right;
+  }
+
+  .proyecto1,.proyecto2, .proyecto3 {
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 40% 60%;
   }
-  .proyecto1 div {
+  .imagen-proyecto-zara, .imagen-proyecto-isidro, .imagen-fomo{
+    align-items: center;
+  }
+  .proyecto1 div, .proyecto2 div, .proyecto3 div {
     padding-top: 1em;
     padding-left: 0em;
     padding-bottom: 1em;
@@ -226,41 +312,192 @@ h4 {
     padding-top: 22vh;
   }
   .imagen-calima-gif{
-  width: 94vw;
-  }
-  .proyecto2 {
-    display: grid;
-    grid-template-columns: 45% 55%;
-  }
-  .proyecto2 div {
-    padding-top: 1em;
-    padding-left: 0em;
-    padding-bottom: 1em;
+    width: 94vw;
   }
   .proyecto2 div h3 {
     padding-left: 0em;
     padding-top: 25vh;
   }
   .imagen-sanisidro-gif{
-  width: 96vw;
-  align-items: center;
-  }
-  .proyecto3 {
-    display: grid;
-    grid-template-columns: 45% 55%;
-  }
-  .proyecto3 div {
-    padding-top: 1em;
-    padding-left: 0em;
-    padding-bottom: 1em;
+    width: 96vw;
+    align-items: center;
   }
   .proyecto3 div h3 {
     padding-left: 0em;
     padding-top: 22vh;
   }
   .imagen-fomomgz-gif{
-  width: 90vw;
-  
+    width: 90vw;
+  }
+  .proyectos {
+    padding: 1.5rem;
+    align-items: center;
+  }
+  .imagen-ast-contacto {
+    height: 20vh;
+    padding-left: 25vw;
+  }
+  .info,
+  .contacto > p {
+    font-size: 3rem;
+    padding: 1em;
+    padding-top: 2em;
+  }
+}
+@media (min-width: 951px) and (max-width: 1200px){
+  .cabesera {
+    max-width: 100%;
+    font-size: 2rem;
+  }
+  nav ul {
+    flex-direction: row; /* Cambia a fila */
+    justify-content: space-around; /* Asegura un espaciado adecuado */
+    text-align: left; /
+  }
+  nav ul li {
+    margin-bottom: 1.5rem;
+  }
+  .imagen-perfil{
+    padding-bottom: 1em;
+    padding-top: 1rem;
+  }
+  .imagen-asterisco1 {
+    width: 25vw;
+    padding-left: 35vw;
+  }
+ p{
+  font-size: 2.2rem;
+  text-align: left;
+  }
+  h1 {
+    font-size: 4rem;
+    text-align: left;
+  }
+ 
+  h2 {
+    font-size: 4rem;
+    text-align: right;
+  }
+  .proyecto1,.proyecto2, .proyecto3 {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+  .imagen-proyecto-zara, .imagen-proyecto-isidro, .imagen-fomo{
+    align-items: center;
+  }
+  .proyecto1 div, .proyecto2 div, .proyecto3 div {
+    padding-top: 1em;
+    padding-left: 0em;
+    padding-bottom: 1em;
+  }
+  .proyecto1 div h3 {
+    padding-left: 0em;
+    padding-top: 22vh;
+  }
+  .imagen-calima-gif{
+    width: 94vw;
+  }
+  .proyecto2 div h3 {
+    padding-left: 0em;
+    padding-top: 25vh;
+  }
+  .imagen-sanisidro-gif{
+    width: 96vw;
+    align-items: center;
+  }
+  .proyecto3 div h3 {
+    padding-left: 0em;
+    padding-top: 22vh;
+  }
+  .imagen-fomomgz-gif{
+    width: 90vw;
+  }
+  .proyectos {
+    padding: 1.5rem;
+    align-items: center;
+  }
+  .imagen-ast-contacto {
+    height: 20vh;
+    padding-left: 25vw;
+  }
+  .info,
+  .contacto > p {
+    font-size: 3rem;
+    padding: 1em;
+    padding-top: 2em;
+  }
+}
+@media (min-width: 1201px){
+  .cabesera {
+    max-width: 100%;
+    font-size: 2rem;
+  }
+  nav ul {
+    flex-direction: row; /* Cambia a fila */
+    justify-content: space-around; /* Asegura un espaciado adecuado */
+    text-align: left; /
+  }
+  nav ul li {
+    margin-bottom: 1.5rem;
+  }
+  .imagen-perfil{
+    padding-bottom: 1em;
+    padding-top: 1rem;
+  }
+  .imagen-asterisco1 {
+    width: 25vw;
+    padding-left: 35vw;
+  }
+ p{
+  font-size: 2.2rem;
+  text-align: left;
+  }
+  h1 {
+    font-size: 5rem;
+    text-align: left;
+  }
+ 
+  h2 {
+    font-size: 5rem;
+    text-align: right;
+  }
+  h3{
+    font-size: 3.5rem;
+    text-align: left;
+  }
+  .proyecto1,.proyecto2, .proyecto3 {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+  .imagen-proyecto-zara, .imagen-proyecto-isidro, .imagen-fomo{
+    align-items: center;
+  }
+  .proyecto1 div, .proyecto2 div, .proyecto3 div {
+    padding-top: 1em;
+    padding-left: 0em;
+    padding-bottom: 1em;
+  }
+  .proyecto1 div h3 {
+    padding-left: 0em;
+    padding-top: 22vh;
+  }
+  .imagen-calima-gif{
+    width: 94vw;
+  }
+  .proyecto2 div h3 {
+    padding-left: 0em;
+    padding-top: 25vh;
+  }
+  .imagen-sanisidro-gif{
+    width: 96vw;
+    align-items: center;
+  }
+  .proyecto3 div h3 {
+    padding-left: 0em;
+    padding-top: 22vh;
+  }
+  .imagen-fomomgz-gif{
+    width: 90vw;
   }
   .proyectos {
     padding: 1.5rem;
