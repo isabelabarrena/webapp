@@ -29,8 +29,8 @@ themeToggleButton.addEventListener("click", () => {
 
   // Cambiar el texto del botón dependiendo del tema actual
   if (document.body.classList.contains("dark-theme")) {
-    themeToggleButton.textContent = "Modo Claro"; // Cambiar el texto del botón a "Modo Claro"
+    themeToggleButton.textContent = "Light Mode"; // Cambiar el texto del botón a "Modo Claro"
   } else {
-    themeToggleButton.textContent = "Modo Oscuro"; // Cambiar el texto del botón a "Modo Oscuro"
+    themeToggleButton.textContent = "Dark Mode"; // Cambiar el texto del botón a "Modo Oscuro"
   }
 });
