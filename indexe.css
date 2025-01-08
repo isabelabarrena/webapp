@@ -203,7 +203,7 @@ img {
   text-transform: none;
   cursor: pointer;
   transition: color 0.3s ease-in-out;
-  margin-left: 2rem; /* Agrega espacio entre el botón y los enlaces */
+  margin-left: 2rem;
 }
 
 .nav-button:hover,
@@ -254,14 +254,13 @@ body.dark-theme .image-big {
 }
 
 body.dark-theme .contact h3 {
-  color: #f0f0f0; /* H3 más claro dentro de la sección de contacto */
+  color: #f0f0f0;
 }
 .contact-item .dark-theme {
   color: #ffffff;
 }
 
 @media (min-width: 400px) and (max-width: 849px) {
-  /* General */
   main {
     padding: 0 1rem;
   }
@@ -269,29 +268,27 @@ body.dark-theme .contact h3 {
     padding: 1.5rem;
   }
 
-  /* Secciones de descripción (para proyectos y sobre mí) */
   .project-description {
-    width: 100%; /* Texto ocupará toda la pantalla */
+    width: 100%;
     padding-right: 0;
     margin-bottom: 1.5rem;
   }
 
   .project-description p {
-    font-size: 1.25rem; /* Ajustamos el tamaño del texto */
+    font-size: 1.25rem;
   }
 
-  /* Imágenes */
   .images {
-    width: 100%; /* Las imágenes ocuparán toda la pantalla */
+    width: 100%;
   }
 
   .image-row {
-    flex-direction: column; /* Cambiamos la dirección de las imágenes a columna */
+    flex-direction: column;
   }
 
   .image-row img {
-    width: 100%; /* Cada imagen ocupará el 100% del ancho disponible */
-    margin-bottom: 1rem; /* Añadimos espacio entre las imágenes */
+    width: 100%;
+    margin-bottom: 1rem;
   }
 
   .image-big {
@@ -301,36 +298,32 @@ body.dark-theme .contact h3 {
   }
 
   .image-big img {
-    width: 100%; /* Imagen grande también ocupará todo el ancho */
+    width: 100%;
   }
 
-  /* Perfil (sobre mí) */
   .image-profile {
-    width: 100%; /* Imagen de perfil ocupará todo el ancho */
+    width: 100%;
     margin-bottom: 2rem;
   }
 
   .image-profile img {
-    width: 100%; /* Imagen se ajustará al ancho completo */
+    width: 100%;
   }
 
-  /* Contacto */
   .contact-section {
-    padding: 2rem 1rem; /* Reducimos padding para móviles */
+    padding: 2rem 1rem;
   }
 
   .contact-columns {
-    flex-direction: column; /* Columnas se apilan verticalmente */
+    flex-direction: column;
   }
 
   .contact-item {
     flex-basis: 100%;
-    margin-bottom: 2rem; /* Añadimos margen entre las secciones de contacto */
+    margin-bottom: 2rem;
   }
 }
-/* Media queries para pantallas medianas (850px a 1700px) */
 @media (min-width: 850px) {
-  /* General */
   main {
     padding: 0 2rem;
     display: flex;
@@ -397,7 +390,7 @@ body.dark-theme .contact h3 {
   }
 
   .image-big img {
-    width: 50%; /* Ajusta el tamaño que desees */
+    width: 50%;
     height: auto;
     object-fit: contain;
   }
@@ -448,16 +441,15 @@ body.dark-theme .contact h3 {
     color: #888;
   }
   .project-description {
-    width: 100%; /* El texto ocupa todo el ancho */
+    width: 100%;
     padding-right: 0;
     margin-bottom: 1.5rem;
   }
 
   .project-description p {
-    font-size: 1.5rem; /* Tamaño de texto más grande para pantallas medianas */
+    font-size: 1.5rem;
   }
 
-  /* Imágenes */
   .images {
     width: 100%; /* Las imágenes ocuparán todo el ancho */
     display: flex;
