@@ -138,7 +138,7 @@ img {
   margin-top: 3rem;
   margin-bottom: 5rem;
   text-align: center;
-  background-color: #a2a2a2;
+  background-color: #c2c2c2;
   padding: 3rem;
 }
 
@@ -160,7 +160,6 @@ img {
 .contact-section {
   width: 100%;
   padding: 4rem 2rem;
-  background-color: #f7f7f7;
 }
 
 .contact-section h2 {
@@ -187,7 +186,6 @@ img {
 
 .contact-item h3 {
   font-size: 1.5rem;
-  color: #000;
   margin-bottom: 0.5rem;
 }
 
@@ -195,6 +193,73 @@ img {
   font-size: 1.25rem;
   color: #888;
 }
+/* TEMA OSCURO */
+.nav-button {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: none;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  margin-left: 2rem; /* Agrega espacio entre el botón y los enlaces */
+}
+
+.nav-button:hover,
+.nav-button:focus {
+  color: #000;
+}
+body.dark-theme {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+header.dark-theme {
+  background-color: rgba(18, 18, 18, 0.78);
+}
+
+.nav-links li a.dark-theme {
+  color: #f1f1f1;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus,
+.nav-links li a.active.dark-theme {
+  color: #fff;
+}
+
+.project-description.dark-theme {
+  color: #f1f1f1;
+}
+
+body.dark-theme .subtitle {
+  color: #ffffff;
+}
+
+.images.dark-theme .image-row img {
+  border: 2px solid #f1f1f1;
+}
+
+.contact-section.dark-theme {
+  background-color: #222222;
+}
+
+.contact-section .subtitle.dark-theme {
+  color: #f1f1f1;
+}
+
+body.dark-theme .image-big {
+  background-color: #222222;
+}
+
+body.dark-theme .contact h3 {
+  color: #f0f0f0; /* H3 más claro dentro de la sección de contacto */
+}
+.contact-item .dark-theme {
+  color: #ffffff;
+}
+
 @media (min-width: 400px) and (max-width: 849px) {
   /* General */
   main {
@@ -327,7 +392,7 @@ img {
     margin-top: 3rem;
     margin-bottom: 5rem;
     text-align: center;
-    background-color: #a2a2a2;
+
     padding: 3rem;
   }
 
@@ -349,7 +414,6 @@ img {
   .contact-section {
     width: 100%;
     padding: 4rem 2rem;
-    background-color: #f7f7f7;
   }
 
   .contact-section h2 {
@@ -376,7 +440,6 @@ img {
 
   .contact-item h3 {
     font-size: 1.5rem;
-    color: #000;
     margin-bottom: 0.5rem;
   }
 
@@ -572,7 +635,6 @@ img {
     margin-top: 3rem;
     margin-bottom: 5rem;
     text-align: center;
-    background-color: #a2a2a2;
     padding: 3rem;
   }
 
