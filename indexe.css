@@ -14,7 +14,7 @@
 
 body {
   font-family: "Neue Haas Display", sans-serif;
-  background-color: #fff;
+  background-color: #ffffff;
   color: #000000;
   margin: 0;
   font-weight: 600;
@@ -22,9 +22,15 @@ body {
 }
 
 header {
+  position: fixed;
+  background-color: #ffffff78;
   display: flex;
   justify-content: center;
   align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   padding: 2rem;
 }
 
@@ -32,7 +38,8 @@ header {
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: none;
-  margin-right: auto;
+  margin-right: 2rem;
+  text-align: center;
 }
 
 .nav-links {
@@ -57,7 +64,7 @@ header {
 }
 
 main {
-  margin: 3rem auto;
+  margin-top: 6rem; /* Asegura que el contenido no quede debajo del header */
   padding: 0 2rem;
   display: flex;
   flex-wrap: wrap;
@@ -103,6 +110,7 @@ main {
 img {
   object-fit: cover;
 }
+
 .image-row {
   display: flex;
   justify-content: space-between;
@@ -113,15 +121,24 @@ img {
 }
 
 .image-big {
-  width: 100%; /* O el tamaño que desees */
+  width: 100%;
   margin-top: 3rem;
   margin-bottom: 5rem;
-  text-align: center; /* Centra la imagen */
-  background-color: #d1d1d1;
+  text-align: center;
 }
 
 .image-big img {
-  width: 50%; /* La imagen ocupa todo el ancho del contenedor */
+  width: 50%; /* Ajusta el tamaño que desees */
+  height: auto;
+  object-fit: contain;
+}
+
+.image-profile {
+  width: 65%;
+}
+
+.image-profile img {
+  width: 100%;
   height: auto;
   object-fit: contain;
 }
