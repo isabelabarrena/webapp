@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("./fonts/Neue-Haas-Display.woff") format("woff");
+  src: url("./fonts/Neue-Haas-Display.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Neue Haas Display", sans-serif;
+  background-color: #fff;
+  color: #000000;
+  margin: 0;
+  font-weight: 600;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: none;
+  margin-right: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #888;
+  font-size: 1.5rem;
+  text-transform: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus,
+.nav-links li a.active {
+  color: #000;
+}
+
+main {
+  margin: 3rem auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-description {
+  width: 30%;
+  height: 40%;
+  padding-right: 1.25rem;
+}
+
+.project-description h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.project-description .subtitle {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.project-description p {
+  font-size: 1.5rem;
+  color: #888;
+  margin-bottom: 0.625rem;
+}
+
+.project-description a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.images {
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+img {
+  object-fit: cover;
+}
+.image-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-row img {
+  width: calc(33.333% - 1rem);
+}
+
+.image-big {
+  width: 100%; /* O el tamaño que desees */
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  text-align: center; /* Centra la imagen */
+  background-color: #d1d1d1;
+}
+
+.image-big img {
+  width: 50%; /* La imagen ocupa todo el ancho del contenedor */
+  height: auto;
+  object-fit: contain;
+}
