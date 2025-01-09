@@ -359,7 +359,7 @@ body.dark-theme .contact h3 {
     margin-bottom: 2rem;
   }
 }
-@media (min-width: 850px) {
+@media (min-width: 850px) and (max-width: 1699px) {
   main {
     padding: 0 2rem;
     display: flex;
@@ -542,7 +542,7 @@ body.dark-theme .contact h3 {
     margin-bottom: 2rem;
   }
 }
-@media (min-width: 1700px) and (max-width: 1920px) {
+@media (min-width: 1700px) {
   body {
     font-family: "Neue Haas Display", sans-serif;
     background-color: #ffffff;
