@@ -664,8 +664,7 @@ body.dark-theme .contact h3 {
   }
   .contact-section {
     width: 100%;
-    padding: 4rem 2rem;
-    background-color: #f7f7f7;
+    padding: 4rem 2;
   }
 
   .contact-section h2 {
