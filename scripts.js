@@ -18,19 +18,18 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(section);
   });
 });
+
 // BOTON MODO OSCURO
 const themeToggleButton = document.getElementById("theme-toggle");
 
 // Función para cambiar el tema
 themeToggleButton.addEventListener("click", () => {
-  // Alternar la clase dark-theme en el body y header
   document.body.classList.toggle("dark-theme");
   document.querySelector("header").classList.toggle("dark-theme");
 
-  // Cambiar el texto del botón dependiendo del tema actual
   if (document.body.classList.contains("dark-theme")) {
-    themeToggleButton.textContent = "Modo Claro"; // Cambiar el texto del botón a "Modo Claro"
+    themeToggleButton.textContent = "Modo Claro";
   } else {
-    themeToggleButton.textContent = "Modo Oscuro"; // Cambiar el texto del botón a "Modo Oscuro"
+    themeToggleButton.textContent = "Modo Oscuro";
   }
 });
