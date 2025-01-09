@@ -53,29 +53,8 @@ header {
   text-align: center;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2.5rem;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: #888;
-  font-size: 1.5rem;
-  text-transform: none;
-  font-weight: bold;
-  transition: color 0.3s ease-in-out;
-}
-
-.nav-links li a:hover,
-.nav-links li a:focus,
-.nav-links li a.active {
-  color: #000;
-}
-
 main {
-  margin-top: 6rem; /* Asegura que el contenido no quede debajo del header */
+  margin-top: 6rem;
   padding: 0 2rem;
   display: flex;
   flex-wrap: wrap;
@@ -193,6 +172,56 @@ img {
   font-size: 1.25rem;
   color: #888;
 }
+/* Botones en el tema claro */
+.nav-links li a {
+  text-decoration: none;
+  color: #888;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus {
+  color: #000; /* Texto negro al pasar el mouse en modo claro */
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+  margin-left: 2rem;
+}
+
+.nav-button:hover,
+.nav-button:focus {
+  color: #000000; /* Cambiar color en modo claro */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #888;
+  font-size: 1.5rem;
+  text-transform: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus,
+.nav-links li a.active {
+  color: #000000;
+}
+
 /* TEMA OSCURO */
 .nav-button {
   background: none;
@@ -208,25 +237,31 @@ img {
 
 .nav-button:hover,
 .nav-button:focus {
-  color: #000;
+  color: #000000;
+}
+
+body.dark-theme .nav-button {
+  color: #aaa; /* Texto gris claro predeterminado */
+}
+
+body.dark-theme .nav-button:hover,
+body.dark-theme .nav-button:focus {
+  color: #fff; /* Texto blanco al pasar el mouse */
 }
 body.dark-theme {
   background-color: #121212;
   color: #f1f1f1;
 }
+body.dark-theme .nav-links li a {
+  color: #aaa; /* Texto gris claro predeterminado en modo oscuro */
+}
 
+body.dark-theme .nav-links li a:hover,
+body.dark-theme .nav-links li a:focus {
+  color: #fff; /* Texto blanco al pasar el mouse en modo oscuro */
+}
 header.dark-theme {
   background-color: rgba(18, 18, 18, 0.78);
-}
-
-.nav-links li a.dark-theme {
-  color: #f1f1f1;
-}
-
-.nav-links li a:hover,
-.nav-links li a:focus,
-.nav-links li a.active.dark-theme {
-  color: #fff;
 }
 
 .project-description.dark-theme {
@@ -452,24 +487,22 @@ body.dark-theme .contact h3 {
   }
 
   .images {
-    width: 100%; /* Las imágenes ocuparán todo el ancho */
+    width: 100%;
     display: flex;
-    flex-wrap: wrap; /* Las imágenes se alinean y envuelven si es necesario */
+    flex-wrap: wrap;
     gap: 1rem;
   }
 
   .image-row {
-    width: 100%; /* El ancho de la fila de imágenes es completo */
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Las imágenes se envuelven si es necesario */
+    flex-wrap: wrap;
   }
 
   .image-row img {
-    width: calc(
-      33.333% - 1rem
-    ); /* Cada imagen ocupará un tercio de la fila con margen */
-    margin-bottom: 1rem; /* Margen inferior entre las imágenes */
+    width: calc(33.333% - 1rem);
+    margin-bottom: 1rem;
   }
 
   .image-big {
@@ -479,26 +512,24 @@ body.dark-theme .contact h3 {
   }
 
   .image-big img {
-    width: 50%; /* Imagen grande ocupará el 50% del ancho */
+    width: 50%;
     height: auto;
     object-fit: contain;
-    margin: 0 auto; /* Centrar imagen grande */
+    margin: 0 auto;
   }
 
-  /* Perfil (sobre mí) */
   .image-profile {
-    width: 50%; /* Imagen de perfil ocupará el 50% del ancho */
+    width: 50%;
     margin: 2rem auto;
   }
 
   .image-profile img {
-    width: 100%; /* Imagen se ajustará al ancho completo */
+    width: 100%;
   }
 
-  /* Contacto */
   .contact-section {
     width: 100%;
-    padding: 3rem 2rem; /* Añadimos más padding para pantallas medianas */
+    padding: 3rem 2rem;
   }
 
   .contact-columns {
@@ -507,14 +538,11 @@ body.dark-theme .contact h3 {
   }
 
   .contact-item {
-    flex-basis: calc(
-      33.333% - 1rem
-    ); /* Cada ítem de contacto ocupará un tercio */
+    flex-basis: calc(33.333% - 1rem);
     margin-bottom: 2rem;
   }
 }
 @media (min-width: 1700px) and (max-width: 1920px) {
-  /* General */
   body {
     font-family: "Neue Haas Display", sans-serif;
     background-color: #ffffff;
@@ -560,14 +588,8 @@ body.dark-theme .contact h3 {
     transition: color 0.3s ease-in-out;
   }
 
-  .nav-links li a:hover,
-  .nav-links li a:focus,
-  .nav-links li a.active {
-    color: #000;
-  }
-
   main {
-    margin-top: 6rem; /* Asegura que el contenido no quede debajo del header */
+    margin-top: 6rem;
     padding: 0 2rem;
     display: flex;
     flex-wrap: wrap;
@@ -632,7 +654,7 @@ body.dark-theme .contact h3 {
   }
 
   .image-big img {
-    width: 50%; /* Ajusta el tamaño que desees */
+    width: 50%;
     height: auto;
     object-fit: contain;
   }
